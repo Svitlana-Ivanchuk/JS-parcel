@@ -40,8 +40,8 @@ const handleWeatherFormSubmit = event => {
           sunset: convertSecondsToHoursAndMinutes(sunset),
         },
       };
-
-      weatherWrapperEl.innerHTML = weatherCardTemplate(enhancedData);
+      // чтоб увидеть результат не в консоле нужно создать разметку шаблон weatherCardTemplate и заменить консоль
+      weatherWrapperEl.innerHTML = console.log(enhancedData);
     })
     .catch(console.warn);
 };
